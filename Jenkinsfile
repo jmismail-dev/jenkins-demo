@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps { 
                 sh 'cd ${WORKSPACE}/client/dist'
-                sh 'sudo cp -r ${WORKSPACE}/client/dist /home/jmismail/jenkins-demo'
+                sh 'sudo mv -r * /home/jmismail/jenkins-demo'
                 //  sh 'sudo rsync -avr -e "ssh -l jmismail" --exclude="client" . jmismail@${SERVER_IP_ADDRESS}:/home/jmismail/jenkins-react-nginx'
             }
         }
