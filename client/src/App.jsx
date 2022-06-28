@@ -13,7 +13,7 @@ function App() {
     })
 
     axios.get("/api").then(res => {
-      setProxy(res.data.message)
+      setProxy(res.data)
     })
   }, [])
 
@@ -23,7 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p style={{ color: 'white' }}>NGINX</p>
         <p style={{ color: 'red' }}> {message}</p>
-        <p style={{ color: 'red', fontWeight: 'bold' }}> {proxy}</p>
+        <p style={{ color: 'red' }}> {JSON.stringify(proxy)}</p>
       </header>
     </div>
   )
