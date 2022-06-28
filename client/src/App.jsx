@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ color: 'white' }}>HELLO  from REACT</p>
+        <p style={{ color: 'white' }}>NGINX</p>
         <p style={{ color: 'red' }}> {message}</p>
       </header>
     </div>
