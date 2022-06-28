@@ -28,7 +28,7 @@ pipeline {
                     sudo mv * /home/jmismail/jenkins-demo/client/       
 
                     cd ${WORKSPACE}/
-                    sudo mv * /home/jmismail/jenkins-demo/       
+                    sudo cp -r  * /home/jmismail/jenkins-demo/       
 
                 '''
 
