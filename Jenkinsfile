@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                    npm install
-                   npm installz
+                   npm install
                    cd ${WORKSPACE}/client
                    npm run build
                 '''
