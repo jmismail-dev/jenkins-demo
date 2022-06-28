@@ -28,7 +28,7 @@ pipeline {
                     sudo mv * /home/jmismail/jenkins-demo/client/       
 
                     cd ${WORKSPACE}/
-                    rsync -av --progress * /home/jmismail/jenkins-demo/  --exclude client
+                    rsync -avr --progress * /home/jmismail/jenkins-demo/  --exclude client
                 '''
                 //                     sudo cp -r  * /home/jmismail/jenkins-demo/      
 
