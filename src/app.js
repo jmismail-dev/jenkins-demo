@@ -9,7 +9,7 @@ app.get('/api', (req, res) => {
     res.status(200).send({ message: "Hello from API" })
 })
 
-app.get('/nginxapi', (req, res) => {
+app.get('/api/nginx', (req, res) => {
     res.status(200).send({ message: "Hello NGINX PROXY" })
 })
 

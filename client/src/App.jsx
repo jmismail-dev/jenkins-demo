@@ -12,7 +12,7 @@ function App() {
       setMessage(res.data.message)
     })
 
-    axios.get("/nginxapi").then(res => {
+    axios.get("/api/nginx").then(res => {
       setProxy(res.data)
     })
   }, []);
