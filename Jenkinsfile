@@ -27,11 +27,6 @@ pipeline {
                     cd ${WORKSPACE}/
                     sudo cp -r * /home/jmismail/jenkins-demo/       
                 '''
-                //                     sudo cp -r  * /home/jmismail/jenkins-demo/      
-
-                // sh 'cd ${WORKSPACE}/client/dist'
-                // sh 'sudo mv * /home/jmismail/jenkins-demo'
-                //  sh 'sudo rsync -avr -e "ssh -l jmismail" --exclude="client" . jmismail@${SERVER_IP_ADDRESS}:/home/jmismail/jenkins-react-nginx'
             }
         }
     }
