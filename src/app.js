@@ -6,7 +6,11 @@ const port = 5000;
 app.use(cors())
 
 app.get('/api', (req, res) => {
-    res.status(200).send({ message: "Hello from NGINX Server" })
+    res.status(200).send({ message: "Hello from API" })
+})
+
+app.get('/nginxapi', (req, res) => {
+    res.status(200).send({ message: "Hello NGINX PROXY" })
 })
 
 app.listen(port, () => {

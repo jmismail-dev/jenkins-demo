@@ -12,18 +12,30 @@ function App() {
       setMessage(res.data.message)
     })
 
-    axios.get("/api").then(res => {
+    axios.get("/nginxapi").then(res => {
       setProxy(res.data)
     })
-  }, [])
+  }, []);
+
+  const getMonoSpaceFont = (color) => {
+    return {
+      color,
+      fontFamily: 'monospace'
+    }
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ color: 'white' }}>NGINX</p>
-        <p style={{ color: 'red' }}> {message}</p>
-        <p style={{ color: 'red' }}> {JSON.stringify(proxy)}</p>
+        <p style={getMonoSpaceFont('white')}>NGINX</p>
+        <h3>Build #1</h3>
+        {message &&
+          <p style={getMonoSpaceFont('red')}> {message}</p>
+        }
+        {proxy && (
+          <p style={getMonoSpaceFont('red')}> {JSON.stringify(proxy)}</p>
+        )}
       </header>
     </div>
   )
