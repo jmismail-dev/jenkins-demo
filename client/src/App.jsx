@@ -29,7 +29,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p style={getMonoSpaceFont('white')}>NGINX</p>
-        <h3>Build #2</h3>
+        <h3>Build #3</h3>
         {message &&
           <p style={getMonoSpaceFont('red')}> {message}</p>
         }
