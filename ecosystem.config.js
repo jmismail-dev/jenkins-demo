@@ -2,7 +2,7 @@ module.exports = {
   apps: [{
     script: './src/app.js',
     watch: ['src'],
-    gnore_watch: ["node_modules", "client"],
+    ignore_watch: ["node_modules", "client"],
   }],
 
   // deploy : {
